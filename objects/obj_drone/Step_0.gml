@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-game_restart()
+x += irandom_range(-1, 1)
+y += irandom_range(-1, 1)
