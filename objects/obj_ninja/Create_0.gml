@@ -4,3 +4,6 @@ start_xscale = image_xscale
 canDash = true
 unlimitedDash = false
 dashing = false
+if room != Room1 {
+	x = obj_scoreboard.prex
+}

@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-window_set_fullscreen(false)
-prex = room_width/2
-prey = 0
+if dashing {
+	sprite_index = spr_ninja_dash
+} else {
+	sprite_index = spr_ninja
+}

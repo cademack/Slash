@@ -10,7 +10,7 @@ if inst == noone {
 	}
 }
 
-if (keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left) and canDash) {
+if ((keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left)) and canDash) {
 	// Dash Mechanic
 	direction = point_direction(x, y, mouse_x, mouse_y)
 	speed = 60

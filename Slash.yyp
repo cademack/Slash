@@ -1,11 +1,14 @@
 {
   "resources": [
+    {"id":{"name":"baseRoom","path":"rooms/baseRoom/baseRoom.yy",},"order":2,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":4,},
     {"id":{"name":"obj_target","path":"objects/obj_target/obj_target.yy",},"order":5,},
+    {"id":{"name":"spr_empty","path":"sprites/spr_empty/spr_empty.yy",},"order":6,},
     {"id":{"name":"obj_bridge","path":"objects/obj_bridge/obj_bridge.yy",},"order":3,},
     {"id":{"name":"spr_drone","path":"sprites/spr_drone/spr_drone.yy",},"order":4,},
     {"id":{"name":"obj_scoreboard","path":"objects/obj_scoreboard/obj_scoreboard.yy",},"order":0,},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"order":2,},
+    {"id":{"name":"obj_level_trigger","path":"objects/obj_level_trigger/obj_level_trigger.yy",},"order":7,},
     {"id":{"name":"obj_ninja","path":"objects/obj_ninja/obj_ninja.yy",},"order":1,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":1,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":3,},
@@ -14,6 +17,7 @@
     {"id":{"name":"spr_ninja","path":"sprites/spr_ninja/spr_ninja.yy",},"order":0,},
     {"id":{"name":"spr_ninja_dash","path":"sprites/spr_ninja_dash/spr_ninja_dash.yy",},"order":5,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":1,},
+    {"id":{"name":"horizontal_path","path":"paths/horizontal_path/horizontal_path.yy",},"order":0,},
     {"id":{"name":"spr_bridge","path":"sprites/spr_bridge/spr_bridge.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
@@ -33,6 +37,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"baseRoom","path":"rooms/baseRoom/baseRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
