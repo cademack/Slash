@@ -7,3 +7,5 @@ dashing = false
 if room != Room1 {
 	x = obj_scoreboard.prex
 }
+falling = false
+depth = -10

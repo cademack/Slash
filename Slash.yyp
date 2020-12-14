@@ -1,8 +1,11 @@
 {
   "resources": [
+    {"id":{"name":"spr_turret","path":"sprites/spr_turret/spr_turret.yy",},"order":7,},
     {"id":{"name":"baseRoom","path":"rooms/baseRoom/baseRoom.yy",},"order":2,},
+    {"id":{"name":"obj_rocket","path":"objects/obj_rocket/obj_rocket.yy",},"order":9,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":4,},
     {"id":{"name":"obj_target","path":"objects/obj_target/obj_target.yy",},"order":5,},
+    {"id":{"name":"spr_rocket","path":"sprites/spr_rocket/spr_rocket.yy",},"order":8,},
     {"id":{"name":"spr_empty","path":"sprites/spr_empty/spr_empty.yy",},"order":6,},
     {"id":{"name":"obj_bridge","path":"objects/obj_bridge/obj_bridge.yy",},"order":3,},
     {"id":{"name":"spr_drone","path":"sprites/spr_drone/spr_drone.yy",},"order":4,},
@@ -18,6 +21,7 @@
     {"id":{"name":"spr_ninja_dash","path":"sprites/spr_ninja_dash/spr_ninja_dash.yy",},"order":5,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":1,},
     {"id":{"name":"horizontal_path","path":"paths/horizontal_path/horizontal_path.yy",},"order":0,},
+    {"id":{"name":"obj_turret","path":"objects/obj_turret/obj_turret.yy",},"order":8,},
     {"id":{"name":"spr_bridge","path":"sprites/spr_bridge/spr_bridge.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],

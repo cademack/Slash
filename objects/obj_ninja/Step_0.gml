@@ -7,6 +7,9 @@ if inst == noone {
 	if inst.hasCollision {
 		canDash = true
 		vspeed = 0
+		if (falling) {
+			room_restart()	
+		}
 	}
 }
 
@@ -23,6 +26,20 @@ if ((keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left)) an
 
 	alarm[0] = 8
 	canDash = false
+}
+
+if (canDash == false and dashing == false) {
+	
+	if (alarm[1] == -1) {
+		alarm[1] = 30
+	}
+	//This alarm sets falling to true
+} else {
+	falling = false
+}
+
+if (falling) {
+	canDash = false	
 }
 
 //Keeping player in room
