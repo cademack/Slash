@@ -9,3 +9,4 @@ if room != Room1 {
 }
 falling = false
 depth = -10
+bouncing = false

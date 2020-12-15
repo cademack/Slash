@@ -12,5 +12,5 @@ if obj_ninja.unlimitedDash {
 }
 
 draw_text_transformed(camera_get_view_x(view_camera[0]) + 220, 
-			  camera_get_view_y(view_camera[0]) + 20, "Has Dash: " + string(obj_ninja.canDash),
+			  camera_get_view_y(view_camera[0]) + 20, "Vspeed: " + string(obj_ninja.vspeed),
 			  2, 2, 0)

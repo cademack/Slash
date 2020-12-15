@@ -6,7 +6,9 @@ hspeed = 0
 vspeed = 0
 dashing = false
 if (canDash) {
-	vspeed = -8	
+	vspeed = -8
+	bouncing = true
+	alarm[2] = 30
 }
 
 

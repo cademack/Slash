@@ -7,14 +7,19 @@ if inst == noone {
 	if inst.hasCollision {
 		canDash = true
 		vspeed = 0
+		sprite_index = spr_ninja
+		bouncing = false
+
 		if (falling) {
 			room_restart()	
 		}
+		falling = false
 	}
 }
 
 if ((keyboard_check_pressed(vk_space) or mouse_check_button_pressed(mb_left)) and canDash) {
 	// Dash Mechanic
+	bouncing = false
 	direction = point_direction(x, y, mouse_x, mouse_y)
 	speed = 60
 	dashing = true
@@ -39,10 +44,46 @@ if (canDash == false and dashing == false) {
 }
 
 if (falling) {
-	canDash = false	
+	canDash = false
+	bouncing = false
 }
 
 //Keeping player in room
 x = clamp(x, 64 + sprite_width/2, room_width - sprite_width/2 - 200)
 //Max fall speed
 vspeed = clamp(vspeed, -999, 90)
+
+
+
+
+//Handling images
+if dashing {
+	sprite_index = spr_ninja_dash
+	image_angle = 0
+	if (hspeed > 0) {
+		//Moving Right
+	} else {
+		//Moving Left
+	}
+} else if bouncing {
+	sprite_index = spr_ninja_spin
+	turnspeed = 45
+	if image_xscale < 0 {
+		image_angle = image_angle - turnspeed
+	} else {
+		image_angle = image_angle + turnspeed
+	}
+
+	if (vspeed > 100000) {
+		sprite_index = spr_ninja
+		bouncing = false
+
+	}
+} else {
+	sprite_index = spr_ninja
+	if falling {
+		image_angle = 270
+	} else {
+		image_angle = 0
+	}
+}
