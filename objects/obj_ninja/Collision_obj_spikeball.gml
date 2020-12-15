@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (dashing or bouncing) {
-	canDash = true
-} else {
+if not spiked {
+	hspeed = -hspeed / 2
+	vspeed = -vspeed / 2
+
+	spiked = true
 	falling = true
-	canDash = false
 }
-instance_destroy(other)

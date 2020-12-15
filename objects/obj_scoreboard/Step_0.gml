@@ -7,3 +7,9 @@ if (instance_exists(obj_ninja)) {
 
 	camera_set_view_pos(view_camera[0], 0, new_y)
 }
+
+if room == titleRoom {
+	if keyboard_check_pressed(vk_space) or mouse_check_button(mb_left) {
+		room_goto_next()
+	}
+}

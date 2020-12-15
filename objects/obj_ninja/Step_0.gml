@@ -6,6 +6,7 @@ if inst == noone {
 } else {
 	if inst.hasCollision {
 		canDash = true
+		spiked = false
 		vspeed = 0
 		sprite_index = spr_ninja
 		bouncing = false
