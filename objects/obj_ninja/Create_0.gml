@@ -11,3 +11,6 @@ falling = false
 depth = -10
 bouncing = false
 spiked = false
+
+hitflashAlpha = 0
+hitflashColor = c_white

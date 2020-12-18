@@ -80,11 +80,14 @@ if dashing {
 		bouncing = false
 
 	}
+} else if falling { 
+	sprite_index = spr_ninja_fall
+	image_angle = 0
 } else {
 	sprite_index = spr_ninja
-	if falling {
-		image_angle = 270
-	} else {
-		image_angle = 0
-	}
+	image_angle = 0
+}
+
+if (hitflashAlpha > 0) {
+    hitflashAlpha -= 0.03
 }

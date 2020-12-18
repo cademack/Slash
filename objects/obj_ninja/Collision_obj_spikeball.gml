@@ -7,4 +7,5 @@ if not spiked {
 
 	spiked = true
 	falling = true
+	hitflashAlpha = 1
 }

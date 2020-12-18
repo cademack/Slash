@@ -5,3 +5,7 @@ if room != titleRoom {
 		obj_ninja.y = 9792
 	}
 }
+
+if room == Room1 {
+	alarm[1] = 1
+}

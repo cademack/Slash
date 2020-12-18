@@ -25,5 +25,15 @@ part_type_alpha2(_f, 1, 0);
 
 global.ptExpl = _f;
 
+var _g = part_type_create()
+
+part_type_shape(_g, pt_shape_explosion)
+part_type_life(_g, 10, 20);
+part_type_scale(_g, 3, 3);
+part_type_color_rgb(_g, 230, 230, 86, 86, 5, 5);
+part_type_alpha2(_g, 1, 0);
+
+global.ptMisExpl = _g
+
 
 #endregion
